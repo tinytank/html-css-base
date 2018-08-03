@@ -1,0 +1,418 @@
+@charset "utf-8"
+/* 头部广告和右侧导航 */
+.header{
+  position: relative;
+}
+.ad,.ad img{
+  width: 492px;
+  height: 42px;
+}
+.header_nav{
+  line-height: 40px;
+}
+.header_nav li{
+  float: left;
+}
+.header_nav a{
+  font-size: 12px;
+  color: #757575;
+}
+.header_nav span{
+  color: #020202;
+  width: 1px;
+  height: 8px;
+  background-color: #000;
+  display: inline-block;
+  margin: 0 10px;
+  overflow: hidden;
+  /* pc端的chrome不允许小于12px的文字 */
+}
+/* 导航 */
+.nav_box{
+  background-color: #393742;
+  border-top: #DFDFDF solid 1px;
+  margin-top: -1px;
+}
+.logo{
+  width: 120px;
+  height: 47px;
+  margin-top: 7px;
+  margin-right: 40px;
+}
+.logo a{
+  display: block;
+  height: 100%;
+}
+.nav_list{
+  font-size: 12px;
+  font-family: 微软雅黑;
+  line-height: 60px;
+}
+.nav_list li{
+  float: left;
+}
+.nav_list a{
+  color: #EEEFF3;
+  padding: 0 30px;
+  display: inline-block;
+}
+.nav_list a:hover{
+  background-color: #4b4953;
+}
+.nav_sel li{
+  float: left;
+  margin-left: 12px;
+}
+.btn_sel{
+  display: inline-block;
+  height: 32px;
+  font: 12px/32px 微软雅黑;
+  width: 115px;
+  margin: 14px 0;
+  text-align: center;
+  background-color: #DD3A29;
+  color: #eeeff3;
+}
+.user_head{
+  position: relative;
+  margin: 12px 0 0 14px;
+}
+.user_head,.user_head img{
+  width: 37px;
+  height: 37px;
+}
+/* 有疑问 */
+/* 有疑问 */
+/* 有疑问 */
+.user_menu{
+  position: absolute;
+  right: 0; top: 48px;
+  width: 118px;
+  border: solid 1px #ECF0F3;
+  padding: 5px;
+}
+.sj1,.sj2{
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+}
+.sj1{
+  border-width: 0 6px 7px;
+  border-style: dashed dashed solid;
+  border-color: transparent transparent #ECF0F3;
+  right: 10px;
+  bottom: 100%;
+}
+.sj2{
+  border-width: 0 5px 6px;
+  border-style: dashed dashed solid;
+  border-color: transparent transparent #fff;
+  right: 11px;
+  bottom: 100%;
+}
+.user_menu dd{
+  margin-bottom: 1px;
+}
+.user_menu a{
+  display: block;
+  height: 30px;
+  font: 12px/30px 微软雅黑;
+  padding-left: 17px;
+  padding-right: 16px;
+  background-color: #ccc;
+  /* 以下四条必备 */
+  text-overflow: ellipsis;/* 文字如果超出后以省略号的形式展现 */
+  width: 85px;/* 通过宽度断定超出 */
+  overflow: hidden;/* 超出要裁掉 */
+  white-space: nowrap;/* 文字不换行 */
+}
+/* 焦点图 */
+.banner{
+  width: 498px;
+  height: 246px;
+  position: relative;
+  overflow: hidden;
+}
+.banner_list{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 500%;
+}
+.banner_list li{
+  float: left;
+  position: relative;
+}
+.banner_list img{
+  width: 498px;
+  height: 246px;
+}
+.banner_fd{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+}
+.banner_fd h3{
+  font: 14px/16px 微软雅黑;
+  height: 16px;
+  border-left: solid 3px #DD3A29;
+  padding-left: 8px;
+  margin: 12px 9px;
+}
+.prev,.next{
+  width: 30px;
+  height: 50px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  margin-top: -45px;
+}
+.prev{
+  left: 0;
+}
+.next{
+  right: 0;
+}
+.news_box{
+  width: 498px;
+  height: 246px;
+  background-color: #fff;
+}
+
+/* 
+  定位单像素bug：
+  在ie6中，如果被参考的元素（有定位的父级元素）是奇数（即单数），则ie6无法参考到实际位置。
+  解决办法：如果布局允许，可以改成偶数（即双数）； 不允许，则用hack（例如：_属性:值，只有ie6认识）。
+*/
+
+.news_nav{
+  height: 42px;
+  font: 12px/42px 微软雅黑;
+  padding: 0 3px;
+}
+.news_nav li{
+  float: left;
+}
+.news_nav a{
+  display: inline-block;
+  padding: 0 14px;
+  color: #393742;
+}
+.news_nav .active{
+  color: red;
+}
+.news_bd{
+  padding: 8px 20px 0;
+}
+.big_title{
+  height: 42px;
+  font: 16px/42px 微软雅黑;
+  text-align: center;
+  color: #dd3a29;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 公用 */
+.gwidth{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}/* .g = .globle */
+.parent .red{color: red;}
+.hide{
+  display: none;
+}
+.bg_qian{
+  background-color: #EEEFF3;
+}
+.bg_shen{
+  background-color: #E0E1E6;
+}
+.pt30{
+  padding-top: 30px;
+}
+.pb30{
+  padding-bottom: 30px;
+}
+.bgwhite{
+  background-color: white;
+}
+
+
+
+.ghd_cont{
+  margin: 0 10px;
+  border-bottom: solid 1px #666;
+  font-family: 微软雅黑;
+}
+.hd_default{
+  line-height: 44px;
+}
+.hd_big{
+  line-height: 50px;
+}
+.hd_big .title{
+  font-size: 18px;
+}
+.title{
+  float: left;
+  font-size: 16px;
+  font-weight: normal;
+}
+.title_big{
+  float: left;
+}
+.more{
+  float: right;
+  font-size: 14px;
+}
+/* 公用列表 */
+.list{
+  font: 12px/30px 微软雅黑;
+}
+.list li{
+  height: 30px;
+  vertical-align: top;
+}
+.list li span,.list li a{
+  float: left;
+}
+.list li span{
+  color: #ccc;
+}
+.list li a{
+  color: #4b4953;
+}
+.list li em{
+  float: right;
+  color: #DCDCDC;
+}
+/* 大标题 */
+.bgwhite .ghd_cont{
+  border-bottom: none;
+}
+/* 列表 */
+.img_list{
+  padding-top: 10px;
+}
+.item{
+  width: 246px;
+  height: 184px;
+  font-size: 12px;
+  position: relative;
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 30px;
+}
+.item-last{
+  margin-right: -4px;
+}
+.item_ct,.item_ct img{
+  width: 246px;
+  height: 150px;
+}
+.item_fd{
+  height: 36px;
+  line-height: 36px;
+  padding: 0 8px;
+}
+.gonghui{
+  float: left;
+}
+.join_link{
+  float: right;
+}
+.item_hide{
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.item_active .item_hide{
+  display: block;
+}
+.item_hide .item_ct{
+  background-color: rgba(255,255,255,.8);
+}
+.item_hide ul{
+  padding: 14px 10px 0;
+}
+.item_hide li{
+  height: 25px;
+  line-height: 25px;
+  vertical-align: top;
+}
+.num{
+  float: left;
+  margin-right: 6px;
+  color: red;
+}
+.link{
+  width: 98px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  float: left;
+  font-family: 微软雅黑;
+  margin-right: 14px;
+}
+.people{
+  float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
